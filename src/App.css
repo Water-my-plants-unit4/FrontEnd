@@ -1,0 +1,14 @@
+a{
+  text-decoration: none;
+  transition: all .2s ease;
+}
+
+a:visited{
+  color: black;
+}
+
+a:hover{
+  color: blue;
+  transform: scale(1.1);
+
+}
