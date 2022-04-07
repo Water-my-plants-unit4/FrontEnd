@@ -9,6 +9,7 @@ const Login = () => {
                         className='label'
                         name='name'
                         type='text'
+                        id='name'
                     placeholder='username' />
                 </label>
                 <label>
@@ -16,9 +17,13 @@ const Login = () => {
                         className='label'
                         name='password'
                         type='password'
+                        id='password'
                     placeholder='******' />
                 </label>
-                <button type='submit'>Login</button>
+                <button type='submit' id='btn'>Login</button>
+                <a href ='/register'>
+                    <span >new here? sign up.</span>
+                </a>
             </form>
         </div>
     )
