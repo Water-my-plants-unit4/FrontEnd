@@ -9,7 +9,7 @@ const Login = () => {
                         className='label'
                         name='name'
                         type='text'
-                        id='name'
+                        id='formfield'
                     placeholder='username' />
                 </label>
                 <label>
@@ -17,7 +17,7 @@ const Login = () => {
                         className='label'
                         name='password'
                         type='password'
-                        id='password'
+                        id='formfield'
                     placeholder='******' />
                 </label>
                 <button type='submit' id='btn'>Login</button>

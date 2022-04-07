@@ -7,18 +7,47 @@ const Register = () => {
                 <label>
                     <input
                         className='label'
-                        name='name'
+                        name='Fname'
                         type='text'
-                    placeholder='username' />
+                        id='formfield'
+                    placeholder='First Name' />
+                </label>
+                <label>
+                    <input
+                        className='label'
+                        name='Lname'
+                        type='text'
+                        id='formfield'
+                    placeholder='Last Name' />
+                </label>
+                <label>
+                    <input
+                        className='label'
+                        name='email'
+                        type='email'
+                        id='formfield'
+                    placeholder='you@youremail.com' />
                 </label>
                 <label>
                     <input
                         className='label'
                         name='password'
                         type='password'
-                    placeholder='******' />
+                        id='formfield'
+                    placeholder='********' />
                 </label>
-                <button type='submit'>Register</button>
+                <label>
+                    <input
+                        className='label'
+                        name='Confpassword'
+                        type='password'
+                        id='formfield'
+                    placeholder='********' />
+                </label>
+                <button type='submit' id='btn'>Register</button>
+                <a href ='/login'>
+                    <span>already have an account? login</span>
+                </a>
             </form>
         </div>
     )

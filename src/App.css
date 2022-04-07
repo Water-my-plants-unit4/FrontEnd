@@ -56,12 +56,11 @@ a:hover{
   
 }
 
-.form #name, #password{
+.form #formfield{
   width: 90%;
   height: 30px;
   font-size: 18px;
   margin: 5px;
-  
 }
 
 .form #btn{

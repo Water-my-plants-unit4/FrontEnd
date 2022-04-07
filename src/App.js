@@ -2,6 +2,7 @@
 import { Link, Outlet } from 'react-router-dom';
 import './App.css';
 
+
 function App() {
   return (
     <div>
@@ -20,4 +21,5 @@ function App() {
   );
 }
 
-export default App;
+
+export default App
