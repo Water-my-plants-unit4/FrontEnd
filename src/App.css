@@ -72,3 +72,7 @@ a:hover{
   font-size: 10%;
   float: right;
 }
+
+body{
+  background: url(/src/assets/images/homepage.jpg) no-repeat center center fixed;
+}
