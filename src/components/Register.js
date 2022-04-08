@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 
 const Register = () => {
     const [newUser, setNewUser] = useState({
@@ -15,6 +16,18 @@ const Register = () => {
             [e.target.name]: e.target.value
         });
     }
+
+    //useEffect makes posting request possible with backend.
+    useEffect(() => {
+        axios
+            .get('https://heroku.com/water-my-plant-pt34.git')
+            .then(res => {
+            console.log(res)
+            })
+            .catch(err => {
+            console.log('there was an error with axios request', err)
+        })
+    })
     return (
         <div>
             <form className='form'>
@@ -57,7 +70,7 @@ const Register = () => {
                 <label>
                     <input
                         className='label formfield'
-                        name='Confpassword'
+                        name='confPassword'
                         type='password'
                         value={newUser.confPassword}
                         onChange={handleChange}
