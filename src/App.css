@@ -1,14 +1,93 @@
 a{
   text-decoration: none;
-  transition: all .2s ease;
 }
-
 a:visited{
   color: black;
 }
-
 a:hover{
-  color: blue;
-  transform: scale(1.1);
-
+  color: green;
+  text-decoration: none;
 }
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left:0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 130px;
+  border-bottom: solid 1px;
+  overflow: hidden;
+  background-color:rgb(219, 209, 180);
+}
+
+.navbar a{
+  transition: all .2s ease;
+}
+
+.navBtn{
+  text-align: center;
+  display: inline;
+  float: right;
+  padding: 12px;
+  margin: 8px;
+}
+
+#btn{
+  margin: 8px;
+  padding: 8px;
+  border: solid black;
+  border-radius: 20px;
+}
+
+.navbar h1{
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+.outlet{
+  position: relative;
+  margin-top: 160px;
+  display: flex;
+  justify-content: center;
+}
+
+.form{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  
+}
+
+.form .formfield{
+  width: 90%;
+  height: 30px;
+  font-size: 18px;
+  margin: 5px;
+}
+
+.form #btn{
+  align-self: center;
+  width: 50%;
+}
+
+.form span{
+  font-size: 10%;
+  float: right;
+}
+
+body{
+  background: url(/src/assets/images/homepage.jpg) no-repeat center center fixed;
+}
+
+.home{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 50%;
+}
+

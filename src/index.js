@@ -4,6 +4,8 @@ import './index.css';
 import App from './App'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Login from './components/Login';
+import Home from './components/Home'
+import Register from './components/Register';
 
 
 const container = document.getElementById('root')
@@ -15,7 +17,9 @@ root.render(
   <Router>
     <Routes>
       <Route path='/' element={<App />}>
-        <Route path='login' element={<Login />} />
+        <Route index element={<Home />} />
+        <Route path='login' element={<Login />}></Route>
+        <Route path='register' element={<Register />}></Route>
       </Route>
     </Routes>
   </Router>
