@@ -6,18 +6,16 @@ const Login = () => {
             <form className='form'>
                 <label>
                     <input
-                        className='label'
+                        className='label formfield'
                         name='name'
                         type='text'
-                        id='formfield'
                     placeholder='username' />
                 </label>
                 <label>
                     <input
-                        className='label'
+                        className='label formfield'
                         name='password'
                         type='password'
-                        id='formfield'
                     placeholder='******' />
                 </label>
                 <button type='submit' id='btn'>Login</button>

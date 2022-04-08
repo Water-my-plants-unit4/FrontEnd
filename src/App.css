@@ -87,8 +87,7 @@ body{
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-left: 0;
+  padding: 40px;
+  width: 50%;
 }
-.first, .second, .third{
-  display: flex;
-}
+
