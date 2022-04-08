@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+import axiosWithAuth from './axiosAuth'
+
 
 const Register = () => {
     const [newUser, setNewUser] = useState({
@@ -18,19 +19,17 @@ const Register = () => {
     }
 
     //useEffect makes posting request possible with backend.
-    useEffect(() => {
-        axios
-            .get('https://heroku.com/water-my-plant-pt34.git')
+    const onSubmit = e => {
+        e.preventDefault()
+        axiosWithAuth().post('/api/auth/register', newUser)
             .then(res => {
-            console.log(res)
-            })
-            .catch(err => {
-            console.log('there was an error with axios request', err)
+                console.log(res)
+                localStorage.setItem('authToken', res.data.token)
         })
-    })
+}
     return (
         <div>
-            <form className='form'>
+            <form className='form' onSubmit={onSubmit}>
                 <label>
                     <input
                         className='label formfield'
