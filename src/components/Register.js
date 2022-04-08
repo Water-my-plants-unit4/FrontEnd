@@ -1,47 +1,66 @@
 import React, {useState} from 'react'
 
 const Register = () => {
+    const [newUser, setNewUser] = useState({
+        Fname: '',
+        Lname: '',
+        email: '',
+        password: '',
+        confPassword: ''
+    })
+
+    const handleChange = e => {
+        setNewUser({
+            ...newUser,
+            [e.target.name]: e.target.value
+        });
+    }
     return (
         <div>
             <form className='form'>
                 <label>
                     <input
-                        className='label'
+                        className='label formfield'
                         name='Fname'
                         type='text'
-                        id='formfield'
+                        value={newUser.Fname}
+                        onChange={handleChange}
                     placeholder='First Name' />
                 </label>
                 <label>
                     <input
-                        className='label'
+                        className='label formfield'
                         name='Lname'
                         type='text'
-                        id='formfield'
+                        value={newUser.Lname}
+                        onChange={handleChange}
                     placeholder='Last Name' />
                 </label>
                 <label>
                     <input
-                        className='label'
+                        className='label formfield'
                         name='email'
                         type='email'
-                        id='formfield'
+                        value={newUser.email}
+                        onChange={handleChange}
                     placeholder='you@youremail.com' />
                 </label>
                 <label>
                     <input
-                        className='label'
+                        className='label formfield'
                         name='password'
                         type='password'
-                        id='formfield'
+                        value={newUser.password}
+                        onChange={handleChange}
                     placeholder='********' />
                 </label>
                 <label>
                     <input
-                        className='label'
+                        className='label formfield'
                         name='Confpassword'
                         type='password'
-                        id='formfield'
+                        value={newUser.confPassword}
+                        onChange={handleChange}
                     placeholder='********' />
                 </label>
                 <button type='submit' id='btn'>Register</button>

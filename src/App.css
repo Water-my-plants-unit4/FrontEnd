@@ -62,7 +62,7 @@ a:hover{
   
 }
 
-.form #formfield{
+.form .formfield{
   width: 90%;
   height: 30px;
   font-size: 18px;
